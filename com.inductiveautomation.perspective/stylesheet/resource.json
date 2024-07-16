@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "stylesheet.css"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "MPS",
+      "timestamp": "2024-07-16T21:51:37Z"
+    },
+    "lastModificationSignature": "8cca52ce4611f366b3db74ae10bbe5a89e43724e25e3cbba517c6c0000272f35"
+  }
+}

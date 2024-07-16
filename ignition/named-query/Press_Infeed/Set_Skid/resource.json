@@ -1,0 +1,45 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "170b0a32f5c03c3d6d017a77f6d2e64515b9e4978813e7c83a405ad5845e5ec8",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "MPS",
+      "timestamp": "2024-07-12T13:01:01Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "Skid",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "PressNum",
+        "sqlType": 2
+      }
+    ]
+  }
+}

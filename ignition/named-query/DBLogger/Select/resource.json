@@ -1,0 +1,55 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "a4e5115ae8c53124898d5dfd25afbf0fd71c9f1b9f84ec3e9565fb2632540246",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "MPS",
+      "timestamp": "2024-07-12T13:01:00Z"
+    },
+    "parameters": [
+      {
+        "type": "QueryString",
+        "identifier": "table_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "logger",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "level",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "project",
+        "sqlType": 7
+      }
+    ]
+  }
+}

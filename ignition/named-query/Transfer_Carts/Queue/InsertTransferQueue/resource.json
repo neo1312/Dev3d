@@ -1,0 +1,65 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "b26160f2a47e0a7a0f8e94d85d2440343c2c24699f42ee0bd60a0240393a0dd4",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "MPS",
+      "timestamp": "2024-07-14T21:46:12Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "AGTC_ID",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Source",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Destination1",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Destination2",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "PileNumber",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "table",
+        "sqlType": 7
+      }
+    ]
+  }
+}

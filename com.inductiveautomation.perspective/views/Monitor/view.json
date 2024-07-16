@@ -1,0 +1,3738 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "INFEED Tranfert Cart",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#F0F0F0"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "props": {
+                  "style": {
+                    "borderColor": "#000000",
+                    "borderStyle": "solid",
+                    "borderWidth": 1
+                  },
+                  "text": "Script-Steps",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header-script"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#92802F00"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "props": {
+                  "style": {
+                    "borderStyle": "solid",
+                    "borderWidth": 0.5
+                  },
+                  "text": "SFC Paramerters",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "FlexRepeater"
+                },
+                "position": {
+                  "basis": "320px"
+                },
+                "type": "ia.display.flex-repeater"
+              }
+            ],
+            "meta": {
+              "name": "chart-params"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column",
+              "justify": "space-around",
+              "style": {
+                "backgroundColor": "#26D370"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Button"
+                    },
+                    "position": {
+                      "basis": "34px"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "Button_0"
+                    },
+                    "position": {
+                      "basis": "34px"
+                    },
+                    "type": "ia.input.button"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "400px"
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Button"
+                    },
+                    "position": {
+                      "basis": "34px"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "Button_0"
+                    },
+                    "position": {
+                      "basis": "34px"
+                    },
+                    "type": "ia.input.button"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "400px"
+                },
+                "props": {
+                  "direction": "column"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "btn"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "justify": "center",
+              "style": {
+                "backgroundColor": "#F0F0F0",
+                "gap": "1rem",
+                "paddingLeft": "15px",
+                "paddingRight": "15px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "script-step"
+            },
+            "position": {
+              "basis": "138px"
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "alignItems": "center",
+              "direction": "column",
+              "elementPosition": {
+                "basis": "auto",
+                "grow": 0,
+                "shrink": 0
+              },
+              "instances": [
+                {
+                  "description": "Source/Destination ready",
+                  "done": true,
+                  "instancePosition": {},
+                  "instanceStyle": {
+                    "classes": ""
+                  },
+                  "name": "ST_1"
+                },
+                {
+                  "description": "Data written on TC PLC",
+                  "done": false,
+                  "instancePosition": {},
+                  "instanceStyle": {
+                    "classes": ""
+                  },
+                  "name": "ST_2"
+                },
+                {
+                  "description": "Movement stored on database table",
+                  "done": false,
+                  "instancePosition": {},
+                  "instanceStyle": {
+                    "classes": ""
+                  },
+                  "name": "ST_3"
+                },
+                {
+                  "description": "Deleted from Queue",
+                  "done": false,
+                  "instancePosition": {},
+                  "instanceStyle": {
+                    "classes": ""
+                  },
+                  "name": "ST_4"
+                },
+                {
+                  "description": "Data sended to SFC",
+                  "done": false,
+                  "instancePosition": {},
+                  "instanceStyle": {
+                    "classes": ""
+                  },
+                  "name": "ST_5"
+                }
+              ],
+              "path": "Templates/Monitor/step"
+            },
+            "type": "ia.display.flex-repeater"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "SFC Destination",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "sourceSFC"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "elements": [
+                            {
+                              "height": "21.30089",
+                              "id": "rect44",
+                              "name": "rect44",
+                              "type": "rect",
+                              "width": "24.39852",
+                              "x": "284.40421",
+                              "y": "554.64111"
+                            },
+                            {
+                              "height": "57.009499",
+                              "id": "rect8",
+                              "name": "rect8",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "28.504749",
+                              "id": "rect7",
+                              "name": "rect7",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6",
+                              "name": "rect6",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "26.969143",
+                              "id": "rect5",
+                              "name": "rect5",
+                              "type": "rect",
+                              "width": "192.98933",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-3",
+                              "name": "rect6-3",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39",
+                              "name": "rect6-39",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "73.645584",
+                              "id": "rect6-1",
+                              "name": "rect6-1",
+                              "type": "rect",
+                              "width": "103.87171",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-12",
+                              "name": "rect6-12",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-3-1",
+                              "name": "rect6-3-1",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4",
+                              "name": "rect6-39-4",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "73.645584",
+                              "id": "rect6-1-2",
+                              "name": "rect6-1-2",
+                              "type": "rect",
+                              "width": "103.87171",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-6",
+                              "name": "rect6-39-4-6",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-4",
+                              "name": "rect6-39-4-4",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "57.009499",
+                              "id": "rect8-0",
+                              "name": "rect8-0",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-4-5",
+                              "name": "rect6-39-4-4-5",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "57.009499",
+                              "id": "rect8-0-3",
+                              "name": "rect8-0-3",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-4-57",
+                              "name": "rect6-39-4-4-57",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-1",
+                              "name": "rect6-39-1",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            }
+                          ],
+                          "id": "defs1",
+                          "name": "defs1",
+                          "type": "defs"
+                        },
+                        {
+                          "elements": [
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "4.7830801",
+                              "id": "rect1",
+                              "name": "rect1",
+                              "ry": "2.3915401",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0859789"
+                              },
+                              "transform": "matrix(1,0,0.07468852,0.99720691,0,0)",
+                              "type": "rect",
+                              "width": "17.252193",
+                              "x": "21.471586",
+                              "y": "44.220299"
+                            },
+                            {
+                              "cx": "75.188889",
+                              "cy": "156.70607",
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "path1",
+                              "name": "path1",
+                              "rx": "4.0942483",
+                              "ry": "2.7400022",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0818245"
+                              },
+                              "type": "ellipse"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text5",
+                              "name": "text5",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "13.3333px",
+                                "shapeInside": "url(#rect5)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "scale(0.26458333)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan5",
+                                  "name": "tspan5",
+                                  "text": "Source Manual\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan9",
+                                  "name": "tspan9",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6",
+                              "name": "text6",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-2.8362345,31.892856)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan11",
+                                  "name": "tspan11",
+                                  "text": "In left side interval\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-0",
+                              "name": "text6-0",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-3)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-2.7113767,41.733761)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan12",
+                                  "name": "tspan12",
+                                  "text": "In right side interval\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan13",
+                                  "name": "tspan13",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan14",
+                                  "name": "tspan14",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3",
+                              "name": "text6-3",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-2.9050151,51.560886)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan15",
+                                  "name": "tspan15",
+                                  "text": "TC/LocOccupied\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan16",
+                                  "name": "tspan16",
+                                  "text": "_PLCTOSM\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan17",
+                                  "name": "tspan17",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-2",
+                              "name": "text6-3-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-1)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,66.109766,98.480525)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan18",
+                                  "name": "tspan18",
+                                  "text": "TC/",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "115.18421"
+                                },
+                                {
+                                  "id": "tspan19",
+                                  "name": "tspan19",
+                                  "text": "LoacOccupied_PLC",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.90496"
+                                },
+                                {
+                                  "id": "tspan20",
+                                  "name": "tspan20",
+                                  "text": "TOSM\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "142.6257"
+                                },
+                                {
+                                  "id": "tspan21",
+                                  "name": "tspan21",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "156.34645"
+                                },
+                                {
+                                  "id": "tspan22",
+                                  "name": "tspan22",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "170.0672"
+                                },
+                                {
+                                  "id": "tspan23",
+                                  "name": "tspan23",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "183.78795"
+                                },
+                                {
+                                  "id": "tspan24",
+                                  "name": "tspan24",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "188.83069"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-2",
+                              "name": "text6-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.9766px",
+                                "shapeInside": "url(#rect6-1)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.24961235,0,0,0.26483678,-0.44719991,62.269021)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "10.604099",
+                              "id": "rect2-9-5",
+                              "name": "rect2-9-5",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.196483"
+                              },
+                              "type": "rect",
+                              "width": "13.840991",
+                              "x": "51.802544",
+                              "y": "75.00325"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan25",
+                                  "name": "tspan25",
+                                  "text": "Source Auto\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan26",
+                                  "name": "tspan26",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-36",
+                              "name": "text6-36",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-12)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,52.22808,31.5952)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan27",
+                                  "name": "tspan27",
+                                  "text": "InSourcePos PLCTOSM\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-0-1",
+                              "name": "text6-0-1",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-3-1)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,52.652924,39.661893)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan28",
+                                  "name": "tspan28",
+                                  "text": "Transfer Door\u0027s array\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan29",
+                                  "name": "tspan29",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan30",
+                                  "name": "tspan30",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan31",
+                                  "name": "tspan31",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9",
+                              "name": "text6-3-9",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,53.400553,50.812619)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan32",
+                                  "name": "tspan32",
+                                  "text": "TC door\u0027s array is ",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan33",
+                                  "name": "tspan33",
+                                  "text": "populated\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan34",
+                                  "name": "tspan34",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan35",
+                                  "name": "tspan35",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                },
+                                {
+                                  "id": "tspan36",
+                                  "name": "tspan36",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "160.54345"
+                                },
+                                {
+                                  "id": "tspan37",
+                                  "name": "tspan37",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "173.87682"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-7",
+                              "name": "text6-3-9-7",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-6)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,51.956055,63.294846)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan38",
+                                  "name": "tspan38",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "117.3343"
+                                },
+                                {
+                                  "id": "tspan39",
+                                  "name": "tspan39",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "134.00092"
+                                },
+                                {
+                                  "id": "tspan40",
+                                  "name": "tspan40",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "150.66755"
+                                },
+                                {
+                                  "id": "tspan41",
+                                  "name": "tspan41",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "167.33417"
+                                },
+                                {
+                                  "id": "tspan42",
+                                  "name": "tspan42",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "184.0008"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-2-9",
+                              "name": "text6-2-9",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "13.3333px",
+                                "shapeInside": "url(#rect6-1-2)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.24961235,0,0,0.26483678,56.266879,62.761147)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text7",
+                              "name": "text7",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect7)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "scale(0.26458333)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan43",
+                                  "name": "tspan43",
+                                  "text": "S1",
+                                  "type": "tspan",
+                                  "x": "196.56836",
+                                  "y": "264.78723"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "text8",
+                              "name": "text8",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect8)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,3.4113086,12.412111)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "10.604099",
+                              "id": "rect2-9-5-1",
+                              "name": "rect2-9-5-1",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.196483"
+                              },
+                              "type": "rect",
+                              "width": "13.840991",
+                              "x": "51.990089",
+                              "y": "105.51113"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan45",
+                                  "name": "tspan45",
+                                  "text": "Loop InsourcePos ",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan46",
+                                  "name": "tspan46",
+                                  "text": "PLCTOSM/SMTOPLC\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan47",
+                                  "name": "tspan47",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan48",
+                                  "name": "tspan48",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                },
+                                {
+                                  "id": "tspan49",
+                                  "name": "tspan49",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "160.54345"
+                                },
+                                {
+                                  "id": "tspan50",
+                                  "name": "tspan50",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "173.87682"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-76",
+                              "name": "text6-3-9-76",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-4)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,54.150897,75.911628)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan51",
+                                  "name": "tspan51",
+                                  "text": "Loop SourceRollRun ",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan52",
+                                  "name": "tspan52",
+                                  "text": "PLCTOSM/SMTOPLC\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan53",
+                                  "name": "tspan53",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan54",
+                                  "name": "tspan54",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                },
+                                {
+                                  "id": "tspan55",
+                                  "name": "tspan55",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "160.54345"
+                                },
+                                {
+                                  "id": "tspan56",
+                                  "name": "tspan56",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "173.87682"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-76-20",
+                              "name": "text6-3-9-76-20",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-4-57)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,54.150897,83.503989)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan57",
+                                  "name": "tspan57",
+                                  "text": "S2",
+                                  "type": "tspan",
+                                  "x": "196.56836",
+                                  "y": "264.78723"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "text8-9",
+                              "name": "text8-9",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect8-0)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,3.1770425,42.8123)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "10.604099",
+                              "id": "rect2-9-5-1-7",
+                              "name": "rect2-9-5-1-7",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.196483"
+                              },
+                              "type": "rect",
+                              "width": "13.840991",
+                              "x": "68.268394",
+                              "y": "136.71521"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan58",
+                                  "name": "tspan58",
+                                  "text": "Transfer Door\u0027s array\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan59",
+                                  "name": "tspan59",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan60",
+                                  "name": "tspan60",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan61",
+                                  "name": "tspan61",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-76-2",
+                              "name": "text6-3-9-76-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-4-5)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,70.837204,111.61624)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan62",
+                                  "name": "tspan62",
+                                  "text": "S3",
+                                  "type": "tspan",
+                                  "x": "196.56836",
+                                  "y": "264.78723"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "text8-9-2",
+                              "name": "text8-9-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect8-0-3)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,19.484286,74.010867)",
+                              "type": "text"
+                            },
+                            {
+                              "d": "m 58.910579,95.490767 3e-6,10.020363",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path11",
+                              "name": "path11",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.910582,116.11523 2e-6,10.02037",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path12",
+                              "name": "path12",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 75.188889,147.31931 v 7.6958",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path25",
+                              "name": "path25",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.263328"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.910584,130.03309 v 17.55865",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path26",
+                              "name": "path26",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 39.179063,147.59174 H 58.910584",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path27",
+                              "name": "path27",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 58.910579,100.50095 H 39.179063",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path28",
+                              "name": "path28",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 39.179063,147.59174 V 100.50095",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path29",
+                              "name": "path29",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 108.0608,129.17588 v 0",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path32",
+                              "name": "path32",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.711757,59.006578 0.02257,-5.165853",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path37",
+                              "name": "path37",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.188226px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 6.8265762,59.006578 0.022568,-5.166885",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path37-0",
+                              "name": "path37-0",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.188244px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2",
+                              "name": "rect2",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.2171168",
+                              "y": "59.007736"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5",
+                              "name": "rect2-5",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.2171168",
+                              "y": "69.111847"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-8",
+                              "name": "rect2-5-8",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.3494084",
+                              "y": "79.215958"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-3",
+                              "name": "rect2-5-3",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.3494084",
+                              "y": "91.068077"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-6",
+                              "name": "rect2-5-6",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.300976",
+                              "y": "91.593262"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-18",
+                              "name": "rect2-5-18",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.30098",
+                              "y": "126.1356"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-7",
+                              "name": "rect2-5-7",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "71.447075",
+                              "y": "126.1356"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-9",
+                              "name": "rect2-9",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.113438",
+                              "y": "59.007736"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-1",
+                              "name": "rect2-5-1",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.113438",
+                              "y": "67.879189"
+                            },
+                            {
+                              "d": "M 6.9590117,94.99864 7.4317393,156.5973",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path41",
+                              "name": "path41",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 71.094638,156.70607 7.5640267,156.59831",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path42",
+                              "name": "path42",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 75.056678,130.06616 0.13221,6.64905",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path43",
+                              "name": "path43",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan63",
+                                  "name": "tspan63",
+                                  "text": "C",
+                                  "type": "tspan",
+                                  "x": "284.4043",
+                                  "y": "564.37218"
+                                }
+                              ],
+                              "fill": {
+                                "opacity": "1",
+                                "paint": "#ffffff"
+                              },
+                              "id": "text44",
+                              "name": "text44",
+                              "stroke": {
+                                "opacity": "1",
+                                "paint": "#ffffff"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect44)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-1.2008271,8.2663092)",
+                              "type": "text"
+                            },
+                            {
+                              "d": "m 75.056538,126.13597 -0.104534,-5.09795",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path44",
+                              "name": "path44",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.270591px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 74.956819,121.23127 -16.183388,-0.0632",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path45",
+                              "name": "path45",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.265748px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 6.9432652,53.839282 51.6743778,0.0011",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path46",
+                              "name": "path46",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 33.733936,48.867278 0.0075,4.97166",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path47",
+                              "name": "path47",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.244778px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 6.82672,69.111847 V 62.9383",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path48",
+                              "name": "path48",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 6.9590116,79.215956 6.82672,73.04241",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path49",
+                              "name": "path49",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 6.9590116,91.068075 V 83.146522",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path50",
+                              "name": "path50",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.72304,62.9383 v 4.940888",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path51",
+                              "name": "path51",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.72304,71.809753 -3e-6,3.193497",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path52",
+                              "name": "path52",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.723037,85.607345 0.187542,5.985915",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path53",
+                              "name": "path53",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            }
+                          ],
+                          "id": "layer1",
+                          "name": "layer1",
+                          "transform": "translate(-3.1739206,-44.053918)",
+                          "type": "group"
+                        }
+                      ],
+                      "viewBox": "0 0 111.49171 115.43306"
+                    },
+                    "type": "ia.shapes.svg"
+                  }
+                ],
+                "meta": {
+                  "name": "source"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.grid-area": {
+                    "binding": {
+                      "config": {
+                        "path": "this.meta.name"
+                      },
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#F0F0F0",
+                    "paddingBottom": "15px",
+                    "paddingLeft": "15px",
+                    "paddingRight": "15px",
+                    "paddingTop": "15px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "dest"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#F0F0F0"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "path": "session.custom.script_message"
+                      },
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "loger"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#F0F0F0"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "SFC Source",
+                  "textStyle": {
+                    "color": "#000000",
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "sourceSFC"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "elements": [
+                            {
+                              "height": "21.30089",
+                              "id": "rect44",
+                              "name": "rect44",
+                              "type": "rect",
+                              "width": "24.39852",
+                              "x": "284.40421",
+                              "y": "554.64111"
+                            },
+                            {
+                              "height": "57.009499",
+                              "id": "rect8",
+                              "name": "rect8",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "28.504749",
+                              "id": "rect7",
+                              "name": "rect7",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6",
+                              "name": "rect6",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "26.969143",
+                              "id": "rect5",
+                              "name": "rect5",
+                              "type": "rect",
+                              "width": "192.98933",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-3",
+                              "name": "rect6-3",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39",
+                              "name": "rect6-39",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "73.645584",
+                              "id": "rect6-1",
+                              "name": "rect6-1",
+                              "type": "rect",
+                              "width": "103.87171",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-12",
+                              "name": "rect6-12",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-3-1",
+                              "name": "rect6-3-1",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4",
+                              "name": "rect6-39-4",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "73.645584",
+                              "id": "rect6-1-2",
+                              "name": "rect6-1-2",
+                              "type": "rect",
+                              "width": "103.87171",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-6",
+                              "name": "rect6-39-4-6",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-4",
+                              "name": "rect6-39-4-4",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "57.009499",
+                              "id": "rect8-0",
+                              "name": "rect8-0",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-4-5",
+                              "name": "rect6-39-4-4-5",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "57.009499",
+                              "id": "rect8-0-3",
+                              "name": "rect8-0-3",
+                              "type": "rect",
+                              "width": "52.17054",
+                              "x": "196.56889",
+                              "y": "245.32361"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-4-4-57",
+                              "name": "rect6-39-4-4-57",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            },
+                            {
+                              "height": "32.308117",
+                              "id": "rect6-39-1",
+                              "name": "rect6-39-1",
+                              "type": "rect",
+                              "width": "122.7479",
+                              "x": "52.603554",
+                              "y": "105.17051"
+                            }
+                          ],
+                          "id": "defs1",
+                          "name": "defs1",
+                          "type": "defs"
+                        },
+                        {
+                          "elements": [
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "4.7830801",
+                              "id": "rect1",
+                              "name": "rect1",
+                              "ry": "2.3915401",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0859789"
+                              },
+                              "transform": "matrix(1,0,0.07468852,0.99720691,0,0)",
+                              "type": "rect",
+                              "width": "17.252193",
+                              "x": "21.471586",
+                              "y": "44.220299"
+                            },
+                            {
+                              "cx": "75.188889",
+                              "cy": "156.70607",
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "path1",
+                              "name": "path1",
+                              "rx": "4.0942483",
+                              "ry": "2.7400022",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0818245"
+                              },
+                              "type": "ellipse"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text5",
+                              "name": "text5",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "13.3333px",
+                                "shapeInside": "url(#rect5)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "scale(0.26458333)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan5",
+                                  "name": "tspan5",
+                                  "text": "Source Manual\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan9",
+                                  "name": "tspan9",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6",
+                              "name": "text6",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-2.8362345,31.892856)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan11",
+                                  "name": "tspan11",
+                                  "text": "In left side interval\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-0",
+                              "name": "text6-0",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-3)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-2.7113767,41.733761)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan12",
+                                  "name": "tspan12",
+                                  "text": "In right side interval\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan13",
+                                  "name": "tspan13",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan14",
+                                  "name": "tspan14",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3",
+                              "name": "text6-3",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-2.9050151,51.560886)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan15",
+                                  "name": "tspan15",
+                                  "text": "TC/LocOccupied\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan16",
+                                  "name": "tspan16",
+                                  "text": "_PLCTOSM\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan17",
+                                  "name": "tspan17",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-2",
+                              "name": "text6-3-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-1)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,66.109766,98.480525)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan18",
+                                  "name": "tspan18",
+                                  "text": "TC/",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "115.18421"
+                                },
+                                {
+                                  "id": "tspan19",
+                                  "name": "tspan19",
+                                  "text": "LoacOccupied_PLC",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.90496"
+                                },
+                                {
+                                  "id": "tspan20",
+                                  "name": "tspan20",
+                                  "text": "TOSM\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "142.6257"
+                                },
+                                {
+                                  "id": "tspan21",
+                                  "name": "tspan21",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "156.34645"
+                                },
+                                {
+                                  "id": "tspan22",
+                                  "name": "tspan22",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "170.0672"
+                                },
+                                {
+                                  "id": "tspan23",
+                                  "name": "tspan23",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "183.78795"
+                                },
+                                {
+                                  "id": "tspan24",
+                                  "name": "tspan24",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "188.83069"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-2",
+                              "name": "text6-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.9766px",
+                                "shapeInside": "url(#rect6-1)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.24961235,0,0,0.26483678,-0.44719991,62.269021)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "10.604099",
+                              "id": "rect2-9-5",
+                              "name": "rect2-9-5",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.196483"
+                              },
+                              "type": "rect",
+                              "width": "13.840991",
+                              "x": "51.802544",
+                              "y": "75.00325"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan25",
+                                  "name": "tspan25",
+                                  "text": "Source Auto\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan26",
+                                  "name": "tspan26",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-36",
+                              "name": "text6-36",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-12)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,52.22808,31.5952)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan27",
+                                  "name": "tspan27",
+                                  "text": "InSourcePos PLCTOSM\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-0-1",
+                              "name": "text6-0-1",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-3-1)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,52.652924,39.661893)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan28",
+                                  "name": "tspan28",
+                                  "text": "Transfer Door\u0027s array\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan29",
+                                  "name": "tspan29",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan30",
+                                  "name": "tspan30",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan31",
+                                  "name": "tspan31",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9",
+                              "name": "text6-3-9",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,53.400553,50.812619)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan32",
+                                  "name": "tspan32",
+                                  "text": "TC door\u0027s array is ",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan33",
+                                  "name": "tspan33",
+                                  "text": "populated\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan34",
+                                  "name": "tspan34",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan35",
+                                  "name": "tspan35",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                },
+                                {
+                                  "id": "tspan36",
+                                  "name": "tspan36",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "160.54345"
+                                },
+                                {
+                                  "id": "tspan37",
+                                  "name": "tspan37",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "173.87682"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-7",
+                              "name": "text6-3-9-7",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-6)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,51.956055,63.294846)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan38",
+                                  "name": "tspan38",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "117.3343"
+                                },
+                                {
+                                  "id": "tspan39",
+                                  "name": "tspan39",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "134.00092"
+                                },
+                                {
+                                  "id": "tspan40",
+                                  "name": "tspan40",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "150.66755"
+                                },
+                                {
+                                  "id": "tspan41",
+                                  "name": "tspan41",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "167.33417"
+                                },
+                                {
+                                  "id": "tspan42",
+                                  "name": "tspan42",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "184.0008"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-2-9",
+                              "name": "text6-2-9",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "13.3333px",
+                                "shapeInside": "url(#rect6-1-2)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.24961235,0,0,0.26483678,56.266879,62.761147)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text7",
+                              "name": "text7",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect7)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "scale(0.26458333)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan43",
+                                  "name": "tspan43",
+                                  "text": "S1",
+                                  "type": "tspan",
+                                  "x": "196.56836",
+                                  "y": "264.78723"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "text8",
+                              "name": "text8",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect8)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,3.4113086,12.412111)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "10.604099",
+                              "id": "rect2-9-5-1",
+                              "name": "rect2-9-5-1",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.196483"
+                              },
+                              "type": "rect",
+                              "width": "13.840991",
+                              "x": "51.990089",
+                              "y": "105.51113"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan45",
+                                  "name": "tspan45",
+                                  "text": "Loop InsourcePos ",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan46",
+                                  "name": "tspan46",
+                                  "text": "PLCTOSM/SMTOPLC\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan47",
+                                  "name": "tspan47",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan48",
+                                  "name": "tspan48",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                },
+                                {
+                                  "id": "tspan49",
+                                  "name": "tspan49",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "160.54345"
+                                },
+                                {
+                                  "id": "tspan50",
+                                  "name": "tspan50",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "173.87682"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-76",
+                              "name": "text6-3-9-76",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-4)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,54.150897,75.911628)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan51",
+                                  "name": "tspan51",
+                                  "text": "Loop SourceRollRun ",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan52",
+                                  "name": "tspan52",
+                                  "text": "PLCTOSM/SMTOPLC\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan53",
+                                  "name": "tspan53",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan54",
+                                  "name": "tspan54",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                },
+                                {
+                                  "id": "tspan55",
+                                  "name": "tspan55",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "160.54345"
+                                },
+                                {
+                                  "id": "tspan56",
+                                  "name": "tspan56",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "173.87682"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-76-20",
+                              "name": "text6-3-9-76-20",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-4-57)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,54.150897,83.503989)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan57",
+                                  "name": "tspan57",
+                                  "text": "S2",
+                                  "type": "tspan",
+                                  "x": "196.56836",
+                                  "y": "264.78723"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "text8-9",
+                              "name": "text8-9",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect8-0)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,3.1770425,42.8123)",
+                              "type": "text"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "10.604099",
+                              "id": "rect2-9-5-1-7",
+                              "name": "rect2-9-5-1-7",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.196483"
+                              },
+                              "type": "rect",
+                              "width": "13.840991",
+                              "x": "68.268394",
+                              "y": "136.71521"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan58",
+                                  "name": "tspan58",
+                                  "text": "Transfer Door\u0027s array\n",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "114.90148"
+                                },
+                                {
+                                  "id": "tspan59",
+                                  "name": "tspan59",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "128.23485"
+                                },
+                                {
+                                  "id": "tspan60",
+                                  "name": "tspan60",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "141.56822"
+                                },
+                                {
+                                  "id": "tspan61",
+                                  "name": "tspan61",
+                                  "type": "tspan",
+                                  "x": "52.603516",
+                                  "y": "147.21007"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "id": "text6-3-9-76-2",
+                              "name": "text6-3-9-76-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect6-39-4-4-5)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,70.837204,111.61624)",
+                              "type": "text"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan62",
+                                  "name": "tspan62",
+                                  "text": "S3",
+                                  "type": "tspan",
+                                  "x": "196.56836",
+                                  "y": "264.78723"
+                                }
+                              ],
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "text8-9-2",
+                              "name": "text8-9-2",
+                              "stroke": {
+                                "paint": "#000000"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "21.3333px",
+                                "shapeInside": "url(#rect8-0-3)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,19.484286,74.010867)",
+                              "type": "text"
+                            },
+                            {
+                              "d": "m 58.910579,95.490767 3e-6,10.020363",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path11",
+                              "name": "path11",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.910582,116.11523 2e-6,10.02037",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path12",
+                              "name": "path12",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 75.188889,147.31931 v 7.6958",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path25",
+                              "name": "path25",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.263328"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.910584,130.03309 v 17.55865",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path26",
+                              "name": "path26",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 39.179063,147.59174 H 58.910584",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path27",
+                              "name": "path27",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 58.910579,100.50095 H 39.179063",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path28",
+                              "name": "path28",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 39.179063,147.59174 V 100.50095",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path29",
+                              "name": "path29",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 108.0608,129.17588 v 0",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path32",
+                              "name": "path32",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.711757,59.006578 0.02257,-5.165853",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path37",
+                              "name": "path37",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.188226px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 6.8265762,59.006578 0.022568,-5.166885",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path37-0",
+                              "name": "path37-0",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.188244px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2",
+                              "name": "rect2",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.2171168",
+                              "y": "59.007736"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5",
+                              "name": "rect2-5",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.2171168",
+                              "y": "69.111847"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-8",
+                              "name": "rect2-5-8",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.3494084",
+                              "y": "79.215958"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-3",
+                              "name": "rect2-5-3",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "3.3494084",
+                              "y": "91.068077"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-6",
+                              "name": "rect2-5-6",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.300976",
+                              "y": "91.593262"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-18",
+                              "name": "rect2-5-18",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.30098",
+                              "y": "126.1356"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-7",
+                              "name": "rect2-5-7",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "71.447075",
+                              "y": "126.1356"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-9",
+                              "name": "rect2-9",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.113438",
+                              "y": "59.007736"
+                            },
+                            {
+                              "fill": {
+                                "paint": "#040404"
+                              },
+                              "height": "3.9305639",
+                              "id": "rect2-5-1",
+                              "name": "rect2-5-1",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.0863925"
+                              },
+                              "type": "rect",
+                              "width": "7.2192063",
+                              "x": "55.113438",
+                              "y": "67.879189"
+                            },
+                            {
+                              "d": "M 6.9590117,94.99864 7.4317393,156.5973",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path41",
+                              "name": "path41",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 71.094638,156.70607 7.5640267,156.59831",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path42",
+                              "name": "path42",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 75.056678,130.06616 0.13221,6.64905",
+                              "fill": {
+                                "paint": "#ffffff"
+                              },
+                              "id": "path43",
+                              "name": "path43",
+                              "stroke": {
+                                "paint": "#000000",
+                                "width": "0.264583"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "elements": [
+                                {
+                                  "id": "tspan63",
+                                  "name": "tspan63",
+                                  "text": "C",
+                                  "type": "tspan",
+                                  "x": "284.4043",
+                                  "y": "564.37218"
+                                }
+                              ],
+                              "fill": {
+                                "opacity": "1",
+                                "paint": "#ffffff"
+                              },
+                              "id": "text44",
+                              "name": "text44",
+                              "stroke": {
+                                "opacity": "1",
+                                "paint": "#ffffff"
+                              },
+                              "style": {
+                                "InkscapeFontSpecification": "sans-serif",
+                                "fontFamily": "sans-serif",
+                                "fontSize": "10.6667px",
+                                "shapeInside": "url(#rect44)",
+                                "whiteSpace": "pre"
+                              },
+                              "transform": "matrix(0.26458333,0,0,0.26458333,-1.2008271,8.2663092)",
+                              "type": "text"
+                            },
+                            {
+                              "d": "m 75.056538,126.13597 -0.104534,-5.09795",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path44",
+                              "name": "path44",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.270591px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 74.956819,121.23127 -16.183388,-0.0632",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path45",
+                              "name": "path45",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.265748px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 6.9432652,53.839282 51.6743778,0.0011",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path46",
+                              "name": "path46",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 33.733936,48.867278 0.0075,4.97166",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path47",
+                              "name": "path47",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.244778px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 6.82672,69.111847 V 62.9383",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path48",
+                              "name": "path48",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 6.9590116,79.215956 6.82672,73.04241",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path49",
+                              "name": "path49",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "M 6.9590116,91.068075 V 83.146522",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path50",
+                              "name": "path50",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.72304,62.9383 v 4.940888",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path51",
+                              "name": "path51",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.72304,71.809753 -3e-6,3.193497",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path52",
+                              "name": "path52",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            },
+                            {
+                              "d": "m 58.723037,85.607345 0.187542,5.985915",
+                              "fill": {
+                                "paint": "transparent",
+                                "rule": "evenodd"
+                              },
+                              "id": "path53",
+                              "name": "path53",
+                              "stroke": {
+                                "linecap": "butt",
+                                "linejoin": "miter",
+                                "opacity": "1",
+                                "paint": "#000000",
+                                "width": "0.264583px"
+                              },
+                              "type": "path"
+                            }
+                          ],
+                          "id": "layer1",
+                          "name": "layer1",
+                          "transform": "translate(-3.1739206,-44.053918)",
+                          "type": "group"
+                        }
+                      ],
+                      "viewBox": "0 0 111.49171 115.43306"
+                    },
+                    "type": "ia.shapes.svg"
+                  }
+                ],
+                "meta": {
+                  "name": "source"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.style.grid-area": {
+                    "binding": {
+                      "config": {
+                        "path": "this.meta.name"
+                      },
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#F0F0F0",
+                    "paddingBottom": "15px",
+                    "paddingLeft": "15px",
+                    "paddingRight": "15px",
+                    "paddingTop": "15px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "source"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "props.style.grid-area": {
+                "binding": {
+                  "config": {
+                    "path": "this.meta.name"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#F0F0F0"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "grid"
+        },
+        "position": {
+          "grow": 1,
+          "shrink": 0
+        },
+        "props": {
+          "alignItems": "center",
+          "direction": "column",
+          "justify": "center",
+          "style": {
+            "classes": "monitor-grid\n"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
