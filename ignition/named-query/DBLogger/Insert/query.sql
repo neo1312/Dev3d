@@ -1,2 +1,2 @@
-INSERT INTO {table_name} (logger, message, level_, project, time_stamp)
-VALUES (:logger, :message, :level_, :project, :time_stamp)
+INSERT INTO  EVENT_LOGS (level, logger, project, TimeStamp)
+VALUES (:level, :logger, :project, Current_timeStamp)

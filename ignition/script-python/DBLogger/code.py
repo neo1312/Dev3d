@@ -1,3 +1,5 @@
+
+
 import java.lang.Exception
 from datetime import datetime
 
@@ -36,3 +38,15 @@ class Logger:
 				self.logger.error("%s" % e)
 	else:
 			self.logger.error("Level is not valid")
+
+#in this function name is a string, valor int, tc should be 'infeed' or 'outfeed'
+def script_monitor(logger,level,project):
+	params={'logger':logger,'level':level,'project':project}
+	system.db.runNamedQuery('DBLogger/Update',params)
+
+def reset_script_steps():
+	system.db.runNamedQuery('DBLogger/Update_0')
+
+def get_charts_running(chart_path):
+	charts = system.sfc.getRunningCharts(chart_path)
+	return charts

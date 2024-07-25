@@ -18,7 +18,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "acaa3d42edd15bbbe76378a4fdcc39634f22b300926a5a6ebbff1a1e24b6885f",
+    "lastModificationSignature": "8c278a4a8e27611ace9361ed6c029b7a9d4af5974a5d1c477179a8076365386a",
     "permissions": [
       {
         "zone": "",
@@ -27,19 +27,7 @@
     ],
     "lastModification": {
       "actor": "MPS",
-      "timestamp": "2024-07-12T13:01:00Z"
-    },
-    "parameters": [
-      {
-        "type": "Parameter",
-        "identifier": "myValueX",
-        "sqlType": 7
-      },
-      {
-        "type": "Parameter",
-        "identifier": "myValueY",
-        "sqlType": 2
-      }
-    ]
+      "timestamp": "2024-07-17T18:09:42Z"
+    }
   }
 }

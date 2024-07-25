@@ -12,13 +12,13 @@
     "fallbackValue": "",
     "maxReturnSize": 100,
     "cacheUnit": "SEC",
-    "type": "ScalarQuery",
+    "type": "UpdateQuery",
     "enabled": true,
     "cacheAmount": 1,
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "05bc277c37a73177d5688f37d51f0798e429c2d50d5df65d8fc8eccf46199ea8",
+    "lastModificationSignature": "52c824b27cc06d9b21fa2335c7607de9be16fe79bf4a3d3bb42d9cb836df2232",
     "permissions": [
       {
         "zone": "",
@@ -27,17 +27,27 @@
     ],
     "lastModification": {
       "actor": "MPS",
-      "timestamp": "2024-07-18T17:09:45Z"
+      "timestamp": "2024-07-18T20:48:07Z"
     },
     "parameters": [
       {
         "type": "Parameter",
-        "identifier": "name",
+        "identifier": "Source",
         "sqlType": 7
       },
       {
         "type": "Parameter",
-        "identifier": "tc",
+        "identifier": "Destination1",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Destination2",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "PileNumber",
         "sqlType": 7
       }
     ]

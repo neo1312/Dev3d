@@ -2,8 +2,8 @@
   "custom": {},
   "params": {
     "description": "on this step we are doing this...",
-    "done": false,
-    "name": "S_1"
+    "done": 1,
+    "name": "ST_1"
   },
   "propConfig": {
     "params.description": {
@@ -125,11 +125,11 @@
               "inputType": "scalar",
               "mappings": [
                 {
-                  "input": false,
+                  "input": 0,
                   "output": "#FFFFFF"
                 },
                 {
-                  "input": true,
+                  "input": 1,
                   "output": "#8AFF8A"
                 }
               ],

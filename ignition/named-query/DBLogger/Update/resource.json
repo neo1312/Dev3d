@@ -12,13 +12,13 @@
     "fallbackValue": "",
     "maxReturnSize": 100,
     "cacheUnit": "SEC",
-    "type": "ScalarQuery",
+    "type": "UpdateQuery",
     "enabled": true,
     "cacheAmount": 1,
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "05bc277c37a73177d5688f37d51f0798e429c2d50d5df65d8fc8eccf46199ea8",
+    "lastModificationSignature": "792c7a5a53a8f9e96470fef195b418ed302dc3d78e9c79e72658611c5fa9b938",
     "permissions": [
       {
         "zone": "",
@@ -27,17 +27,22 @@
     ],
     "lastModification": {
       "actor": "MPS",
-      "timestamp": "2024-07-18T17:09:45Z"
+      "timestamp": "2024-07-18T17:46:14Z"
     },
     "parameters": [
       {
         "type": "Parameter",
-        "identifier": "name",
+        "identifier": "logger",
         "sqlType": 7
       },
       {
         "type": "Parameter",
-        "identifier": "tc",
+        "identifier": "level",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "project",
         "sqlType": 7
       }
     ]

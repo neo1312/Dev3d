@@ -61,7 +61,8 @@ def getSplit(tagpath):
 	sec_f = 'Press_Auxiliary_Conveyors'
 	sec_g = 'Press_Backfill_RB'
 	sec_h = 'PressIF_TransferCart'
-	#add the option for Outfeed tc the name retrund shouild be TC_AGTC1
+	sec_i = 'PressOF_TransferCart'
+
 	aMatch = re.search(sec_a, tagpath, re.IGNORECASE)
 	bMatch = re.search(sec_b, tagpath, re.IGNORECASE)
 	cMatch = re.search(sec_c, tagpath, re.IGNORECASE)
@@ -70,6 +71,7 @@ def getSplit(tagpath):
 	fMatch = re.search(sec_f, tagpath, re.IGNORECASE)
 	gMatch = re.search(sec_g, tagpath, re.IGNORECASE)
 	hMatch = re.search(sec_h, tagpath, re.IGNORECASE)
+	iMatch = re.search(sec_i, tagpath, re.IGNORECASE)
 	if aMatch:
 		original = tagpath.split('[default]Press_Infeed/AGTC_')
 		return original[1]
@@ -93,7 +95,10 @@ def getSplit(tagpath):
 		return original[1]
 	elif hMatch:
 		original = tagpath.split('[default]PressIF_TransferCart/')
-		return original[1]	
+		return original[1]
+	elif iMatch:
+		original = tagpath.split('[default]PressOF_TransferCart/')
+		return original[1]
 		
 		
 #this funtion takes a rollerbed name like 'AGTC_FPA10_1' and returns the area wehre it belongs. 
@@ -103,10 +108,11 @@ def getArea(name):
 		'name':name
 	}
 	result=system.db.runNamedQuery(query,params)
-	area=result.getValueAt(0,"Area")
-	return str(area)
-		
-		
+	if result.getRowCount() > 0:
+		area=result.getValueAt(0,"Area")
+		return str(area)
+	else:
+		raise Exception("No area found for the given name: " + name)
 		
 def getFullPath(partialpath):
 	filterpath = '*' + partialpath + '*'
@@ -271,7 +277,7 @@ def get_area_code(path):
 		else:
 			return 1
 	except:
-		return "This element doesn't found on TC area"
+		return "This element was not found on TC area"
 
 #read an array from source and create two list to transfer 
 def read_array(area,items,path):
@@ -282,6 +288,9 @@ def read_array(area,items,path):
 			second_path='/Door/Door_'+str(i)
 		elif area == 3:
 			second_path='/Door/'+str(i+1)
+		else:
+			raise ValueError('Unsupported area value:' + str(area))
+		
 		pile_tag_path = path+second_path+'/PileNumber'
 		serial_tag_path = path+second_path+'/Serial'
 		pile_value = system.tag.read(pile_tag_path).value
@@ -379,17 +388,21 @@ def is_dest_auto(dest1,dest2):
 
 
 #secondary fucntions.
-def check_auto_dest(dest1,dest2):
+def check_auto_dest(dest1,dest2=None):
 	dest1_area = getArea(dest1)
 	dest1_full_path = ('[default]'+dest1_area + '/AGTC_'+ dest1)
 	is_dest1_auto = system.tag.read(dest1_full_path+'/Coordinate/Auto').value
 	dest1_ready=system.tag.read(dest1_full_path+'/TransComm/ReadyToLoad_PLCTOSM').value
 	
-	dest2_area = getArea(dest2)
-	dest2_full_path = ('[default]'+dest2_area + '/AGTC_'+ dest2)
-	is_dest2_auto = system.tag.read(dest2_full_path+'/Coordinate/Auto').value
-	dest2_ready = system.tag.read(dest2_full_path+'/TransComm/ReadyToLoad_PLCTOSM').value
-	return (is_dest1_auto and dest1_ready) or (is_dest2_auto and dest2_ready)
+	if dest2 == None:
+		return (is_dest1_auto and dest1_ready)
+		
+	else:
+		dest2_area = getArea(dest2)
+		dest2_full_path = ('[default]'+dest2_area + '/AGTC_'+ dest2)
+		is_dest2_auto = system.tag.read(dest2_full_path+'/Coordinate/Auto').value
+		dest2_ready = system.tag.read(dest2_full_path+'/TransComm/ReadyToLoad_PLCTOSM').value
+		return (is_dest1_auto and dest1_ready) or (is_dest2_auto and dest2_ready)
 
 def check_ready_unload(source):
 	source_area = getArea(source)
@@ -437,11 +450,16 @@ def get_movement_ready(result):
 				return element
 				break
 		else:# we are not using the dest_ready funtion here because it is already included on auto_ready Function.
-			auto_dest_ready=check_auto_dest(dest1,dest2)
+			if dest1 and dest2:
+				auto_dest_ready=check_auto_dest(dest1, dest2)
+			else:
+				auto_dest_ready=check_auto_dest(dest1)
+			
 			source_ready=check_ready_unload(source)
 			if auto_dest_ready and source_ready:
 				return element
 				break
+				
 #*FINISH****** functions for select movement ready on Infeed timer script*************************
 
 def get_step_name(chart_path):

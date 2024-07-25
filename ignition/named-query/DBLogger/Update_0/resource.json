@@ -12,13 +12,13 @@
     "fallbackValue": "",
     "maxReturnSize": 100,
     "cacheUnit": "SEC",
-    "type": "ScalarQuery",
+    "type": "UpdateQuery",
     "enabled": true,
     "cacheAmount": 1,
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "05bc277c37a73177d5688f37d51f0798e429c2d50d5df65d8fc8eccf46199ea8",
+    "lastModificationSignature": "3de1384317a3106b5f796bc9624f17ee0902630e4bb9ee4fc1f1ca96afc532d1",
     "permissions": [
       {
         "zone": "",
@@ -27,18 +27,18 @@
     ],
     "lastModification": {
       "actor": "MPS",
-      "timestamp": "2024-07-18T17:09:45Z"
+      "timestamp": "2024-07-17T18:55:51Z"
     },
     "parameters": [
       {
         "type": "Parameter",
-        "identifier": "name",
+        "identifier": "myValueX",
         "sqlType": 7
       },
       {
         "type": "Parameter",
-        "identifier": "tc",
-        "sqlType": 7
+        "identifier": "myValueY",
+        "sqlType": 2
       }
     ]
   }

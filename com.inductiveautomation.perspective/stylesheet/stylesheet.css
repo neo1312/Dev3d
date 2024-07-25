@@ -73,13 +73,13 @@
 
 .psc-monitor-grid{
   display: grid;
-  grid-template-columns: 25% 37.5% 37.5% ;
-  gap:1rem;
+  grid-template-columns: 30% 35% 35% ;
+  gap:10px;
   grid-template-areas: 
   "header			header 	header"
   "loger 			loger 	loger"
-  "header-script 	source 	dest"
-  "script-step 	source 	dest"
+  "header-script    source 	dest"
+  "script-step  	source 	dest"
   "chart-params 	source 	dest"
   "btn 			source 	dest";
   padding:20px;

@@ -1,22 +1,14 @@
 <?xml version="1.0" ?>
 <sfc zoom="0.49999988" canvas="52 51" execution-mode="Callable" hot-editable="false" persist-state="true" redundant-sync="false">
 	<onstart>def onStart(chart): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
-	chart['state'] = chart.state
-	SFCMonitor.insert_data(chart)</onstart>
+</onstart>
 	<onstop>def onStop(chart): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
 	chart['state'] = chart.state
 	SFCMonitor.insert_data(chart)</onstop>
 	<oncancel>def onCancel(chart): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
-	chart['state'] = chart.state
-	SFCMonitor.insert_data(chart)
 	Functions.reset_TC_tags(chart.tc_path)</oncancel>
 	<onabort>def onAbort(chart): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
-	chart['state'] = chart.state
-	SFCMonitor.insert_data(chart)
-	#Create a logger. Use the path of the chart so each chart will use separate loggers
-	logger = system.util.getLogger("SFC_Infeed_TC_Move_Logger")
-	#Invoke the logger. Use chart.abortCause to report the issue
-	logger.error("Chart Aborted. Reason: %s" % (chart.abortCause))</onabort>
+</onabort>
 	<step id="e1ba1c35-fd1c-4aa7-a8dc-c0fa73bcb067" location="5 0" name="__begin" factory-id="begin-step">
 <parameters>
 	<parameter><name>sourcepath</name><expression>'test'</expression></parameter>
@@ -33,20 +25,26 @@
 	</step>
 	<step id="e86716a8-079f-415f-952a-be96900738bb" location="11 9" name="S1" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S1','1','infeed')
 	try:
 		Functions.transfer_array_data(chart.sourcepath,chart.tc_path,1)
-		chart['state'] = chart.state
-		SFCMonitor.insert_data(chart)
 	except Exception as e:
 		logger = system.util.getLogger("SFC_IN_S1_Logger")
 		#Invoke the logger. Use chart.abortCause to report the issue
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e,step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S1','2','infeed')</stop-script>
 	</step>
 	<step id="ccc251b5-04e9-4747-b161-b2a81b2faf73" location="11 25" name="S2" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
-	#import time
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S2','1','infeed')
 	#task1
 	path = chart.sourcepath + '/TransComm/InSourcePos_SMTOPLC'
 	curValue = system.tag.read(path)
@@ -70,11 +68,17 @@
 	curValue=system.tag.read(path)
 	newValue = system.tag.read(chart.sourcepath + '/TransComm/SourceRollRun_PLCTOSM').value
 	if curValue != newValue:
-		system.tag.write(path, newValue)	
-	#time.sleep(0.25)</start-script>
+		system.tag.write(path, newValue)	</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S2','2','infeed')
+	</stop-script>
 	</step>
 	<step id="c2634a8c-b7b3-4391-8a4e-61f24ee29831" location="13 36" name="S3" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S3','1','infeed')
 	try:
 		Functions.reset_source(chart.sourcepath)
 	except Exception as e:
@@ -83,20 +87,32 @@
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e, step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S3','2','infeed')</stop-script>
 	</step>
 	<step id="433faa11-f629-4542-b804-77475b700583" location="37 10" name="S5" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
 	try:
 		Functions.transfer_array_data(chart.tc_path,chart.destinationpath,1)
+		#this is used for monitor view
+		step= Functions.get_step_name('INFEED_TC_MOVE')
+		DBLogger.script_monitor('S5','1','infeed')
 	except Exception as e:
 		logger = system.util.getLogger("SFC_IN_S5_Logger")
 		#Invoke the logger. Use chart.abortCause to report the issue
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e, step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S5','2','infeed')</stop-script>
 	</step>
 	<step id="abe88f94-67b0-4b00-9162-9d9fc58cda94" location="37 13" name="S6" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S6','1','infeed')
 	try:
 		chart.is_populated=Functions.is_populated(chart.destinationpath)
 		if chart.is_populated == True:
@@ -111,9 +127,15 @@
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e, step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S6','2','infeed')</stop-script>
 	</step>
 	<step id="9c1f5a43-e6d3-459e-ae15-1d6caea3ee6c" location="25 33" name="S4" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S4','1','infeed')
 	try:
 		Functions.write_array_zero(1,50,chart.tc_path)
 	except Exception as e:
@@ -122,9 +144,15 @@
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e, step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S4','2','infeed')</stop-script>
 	</step>
 	<step id="afee9c8f-d33e-4108-8e66-9dcc40f3b963" location="37 19" name="S7" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S7','1','infeed')
 	try:
 		Functions.clean_array_1(chart.destinationpath,1)
 	except Exception as e:
@@ -133,9 +161,15 @@
 		step=Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e,step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S7','2','infeed')</stop-script>
 	</step>
 	<step id="420f268a-796d-43b8-b082-5f3f87de1818" location="37 27" name="S8" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S8','1','infeed')
 	#import time
 	#task1
 	path =  chart.destinationpath + '/TransComm/InDestPos_SMTOPLC'
@@ -162,9 +196,15 @@
 	if curValue != newValue:
 		system.tag.write(path, newValue)
 	#time.sleep(0.25)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S8','2','infeed')</stop-script>
 	</step>
 	<step id="70428ac6-cc06-4a0c-8da3-8ca113a97bf7" location="38 37" name="S9" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S9','1','infeed')
 	try:	
 		Functions.reset_dest(chart.destinationpath)
 	except Exception as e:
@@ -173,9 +213,15 @@
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e, step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S9','2','infeed')</stop-script>
 	</step>
 	<step id="06fa0ec7-3ca0-471f-8198-2906bc724e22" location="38 41" name="S10" factory-id="action-step">
 		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	#this is used for monitor view
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S10','1','infeed')
 	try:
 		Functions.reset_TC_tags(chart.tc_path)
 	except Exception as e:
@@ -184,8 +230,15 @@
 		step = Functions.get_step_name('INFEED_TC_MOVE')
 		logger.error("Chart Errors Reason: %s" % (e))
 		Functions.sfc_add_log(e, step)</start-script>
+		<stop-script>def onStop(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	step= Functions.get_step_name('INFEED_TC_MOVE')
+	DBLogger.script_monitor('S10','2','infeed')</stop-script>
 	</step>
-	<step id="3841f700-52e7-4f95-8217-ae9b14904ad2" location="38 43" name="__end1" factory-id="end-step">	</step>
+	<step id="5a533859-dceb-4103-b100-a06027cccd60" location="38 43" name="S11" factory-id="action-step">
+		<start-script>def onStart(chart, step): # WARNING: This resource was generated in a newer version of Ignition. For the best editing experience, recreate it in the current version.
+	DBLogger.reset_script_steps()</start-script>
+	</step>
+	<step id="3841f700-52e7-4f95-8217-ae9b14904ad2" location="38 45" name="__end1" factory-id="end-step">	</step>
 	<transition id="167c1cb5-3869-4114-b534-e793b0664b31" location="3 3">{source_auto_state} = 0</transition>
 	<transition id="ddc56080-95c5-4990-ad92-71fc7db589be" location="8 3">{source_auto_state}=1</transition>
 	<transition id="ed7e4e4e-a7ed-4314-8d26-1f3657b1c211" location="11 6">tag({tc_path} + '/TransComm/InSourcePos_PLCTOSM')</transition>
@@ -504,5 +557,6 @@ If TC/LocOccupied_PLCTOSM = 0, end loop
 	<link id="86c5b161-3a12-4dbf-9bad-64f833025036" location="38 39"><up/><left/><down/></link>
 	<link id="276f65ee-0082-4244-aefa-fd86662e895d" location="38 40"><up/><down/></link>
 	<link id="d2211dfb-7201-46d2-b61c-dc5d3f3656b8" location="38 42"><up/><down/></link>
+	<link id="f9f86382-24cc-47b3-bfb7-024c3482086c" location="38 44"><up/><down/></link>
 
 </sfc>

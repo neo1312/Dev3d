@@ -2503,7 +2503,7 @@
               "value": 3
             }
           ],
-          "value": 2
+          "value": 1
         },
         "type": "ia.input.dropdown"
       },
@@ -3313,7 +3313,7 @@
           }
         },
         "props": {
-          "text": "39235"
+          "text": "24597"
         },
         "type": "ia.display.label"
       },
@@ -3338,7 +3338,7 @@
           }
         },
         "props": {
-          "text": "49214"
+          "text": "51789"
         },
         "type": "ia.display.label"
       },
@@ -3841,7 +3841,7 @@
           "railColor": "#E62525",
           "step": 0.5,
           "trackColor": "#E62525",
-          "value": 53.768700388848046
+          "value": 20.13867537506318
         },
         "type": "ia.input.slider"
       },
@@ -3885,7 +3885,7 @@
           "railColor": "#E6D725",
           "step": 0.1,
           "trackColor": "#E6D725",
-          "value": 77.73251208658225
+          "value": 83.87382040322389
         },
         "type": "ia.input.slider"
       }

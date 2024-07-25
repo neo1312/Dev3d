@@ -18,7 +18,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "3cead93f1f0cba7034d044b9a4566db986a581e6d8373b13c8a0bcd28881f1fb",
+    "lastModificationSignature": "8cb32568bc4cdd4e5dfcd96cb76418db1f864d7806bea66cd91773ff7b3fa1ef",
     "permissions": [
       {
         "zone": "",
@@ -27,33 +27,18 @@
     ],
     "lastModification": {
       "actor": "MPS",
-      "timestamp": "2024-07-12T13:01:01Z"
+      "timestamp": "2024-07-18T16:38:04Z"
     },
     "parameters": [
       {
-        "type": "QueryString",
-        "identifier": "table_name",
+        "type": "Parameter",
+        "identifier": "level",
         "sqlType": 7
       },
       {
         "type": "Parameter",
         "identifier": "logger",
         "sqlType": 7
-      },
-      {
-        "type": "Parameter",
-        "identifier": "message",
-        "sqlType": 7
-      },
-      {
-        "type": "Parameter",
-        "identifier": "level_",
-        "sqlType": 7
-      },
-      {
-        "type": "Parameter",
-        "identifier": "time_stamp",
-        "sqlType": 8
       },
       {
         "type": "Parameter",

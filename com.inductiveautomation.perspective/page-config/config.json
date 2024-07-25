@@ -6,7 +6,7 @@
     },
     "/EventMonitor": {
       "title": "Event Monitor and Control",
-      "viewPath": "EventMonitor"
+      "viewPath": "Monitor"
     },
     "/det_rollerbed": {
       "title": "DET Rollerbeds",

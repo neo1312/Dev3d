@@ -1196,6 +1196,32 @@
                       "direction": "column"
                     },
                     "type": "ia.container.flex"
+                  },
+                  {
+                    "meta": {
+                      "name": "SFC_Monitor"
+                    },
+                    "position": {
+                      "basis": "320px"
+                    },
+                    "props": {
+                      "params": {
+                        "chart_path": "",
+                        "chart_steps": [
+                          {
+                            "description": "First condition",
+                            "name": "__begin"
+                          },
+                          {
+                            "description": "Last condition",
+                            "name": "__end1"
+                          }
+                        ],
+                        "pollRateScripts": 1000
+                      },
+                      "path": "SFCMonitor/SFC_Monitor"
+                    },
+                    "type": "ia.display.view"
                   }
                 ],
                 "meta": {
