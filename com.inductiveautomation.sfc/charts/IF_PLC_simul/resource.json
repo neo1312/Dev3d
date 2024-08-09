@@ -4,13 +4,13 @@
   "restricted": false,
   "overridable": true,
   "files": [
-    "props.json"
+    "sfc.xml"
   ],
   "attributes": {
     "lastModification": {
       "actor": "MPS",
-      "timestamp": "2024-08-05T17:41:22Z"
+      "timestamp": "2024-08-09T15:59:02Z"
     },
-    "lastModificationSignature": "77224fb1347faf15f38ba9106984da928a6f5a59b8d2680530715ee6f13111ff"
+    "lastModificationSignature": "9173fa3a3d1377093740064a4ad1766992f2be1a43fc3c08c21517d543d1bbe7"
   }
 }

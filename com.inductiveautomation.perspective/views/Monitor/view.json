@@ -160,6 +160,20 @@
                       ],
                       "type": "property"
                     }
+                  },
+                  "props.instances[2].description": {
+                    "binding": {
+                      "config": {
+                        "path": "..../grid.custom.sfc_running"
+                      },
+                      "transforms": [
+                        {
+                          "code": "\tif value.getRowCount() \u003d\u003d 0:\n\t\tvalor \u003d \"No chart active\"\n\telse:\n\t\tvalor \u003d value.getValueAt(0,\"destinationpath\")\n\treturn valor\n\tif len(value) \u003d\u003d 0:\n\t\treturn \"No chart running\"",
+                          "type": "script"
+                        }
+                      ],
+                      "type": "property"
+                    }
                   }
                 },
                 "props": {
@@ -178,6 +192,13 @@
                         "classes": ""
                       },
                       "name": "Satate"
+                    },
+                    {
+                      "instancePosition": {},
+                      "instanceStyle": {
+                        "classes": ""
+                      },
+                      "name": "dest_path"
                     }
                   ],
                   "justify": "space-between",

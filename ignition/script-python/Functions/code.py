@@ -1,6 +1,6 @@
 #Libraries
 import time
-
+import Functions
 
 
 # Function to find the value of 'Serial' for each door using tag path
@@ -342,7 +342,7 @@ def is_populated(tag_path):
     if area == 1:
         return system.tag.read(tag_path + '/Door/Door_0/PileNumber').value != ''
     elif area == 3:
-        return system.tag.read(tag_path + '/Door/Door_1/PileNumber').value != ''
+        return system.tag.read(tag_path + '/Door/1/PileNumber').value != ''
     else:
         return 
    
@@ -479,3 +479,53 @@ def sfc_add_log(error, step):
 	#log to db table
 	parameters = {'log': log_error,'step':step}
 	system.db.runNamedQuery('SFCMonitor/Step_Logs/InsertStepLogs', parameters)
+	
+#*****START******Interference functions
+
+def get_param_x(chart_path, param): #Returns X Location (int) of param on Active Chart
+	value = SFCMonitor.get_charts_running(chart_path)
+	instance_ID = value.getValueAt(0,0)
+	path = system.sfc.getVariables(instance_ID)[param]
+	x = system.tag.read(path + "/Coordinate/X_Location").value
+	return x
+	
+def get_param_bool(chart_path, param): #Returns result (Bool) of param on Active Chart
+	value = SFCMonitor.get_charts_running(chart_path)
+	instance_ID = value.getValueAt(0,0)
+	result = system.sfc.getVariables(instance_ID)[param]
+	if result == 0:
+		result = False
+	elif result == 1:
+		result = True
+	return result
+
+def is_OF_move_interfering(IF_source, IF_dest, OF_loc):
+	interfere_dist = system.tag.read('[default]TC_Interference_dist').value
+	OF_loc = OF_loc - interfere_dist
+	if OF_loc < IF_source or OF_loc < IF_dest:
+		return True
+	return False
+	
+def is_IF_move_interfering(OF_source, OF_dest, IF_loc):
+	interfere_dist = system.tag.read('[default]TC_Interference_dist').value
+	IF_loc = IF_loc + interfere_dist
+	if IF_loc > OF_source or IF_loc > OF_dest:
+		return True
+	return False
+	
+def wait_until_condition(condition_func, interval=1):
+	while not condition_func():
+		time.sleep(interval)
+		
+def sources_interfere(IF_source, OF_source):
+	if IF_source < OF_source:
+		return False
+	return True
+	
+def destinations_interfere(IF_dest, OF_dest):
+	if IF_dest < OF_dest:
+		return False
+	return True
+
+#*****FINISH******Interference functions
+	

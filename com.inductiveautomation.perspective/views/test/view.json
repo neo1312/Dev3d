@@ -1,0 +1,125 @@
+{
+  "custom": {
+    "sfc_run": {
+      "$": [
+        "ds",
+        192,
+        1722630409596
+      ],
+      "$columns": [
+        {
+          "data": [],
+          "name": "instanceId",
+          "type": "String"
+        },
+        {
+          "data": [],
+          "name": "chartPath",
+          "type": "String"
+        },
+        {
+          "data": [],
+          "name": "startDate",
+          "type": "Date"
+        },
+        {
+          "data": [],
+          "name": "startedBy",
+          "type": "String"
+        },
+        {
+          "data": [],
+          "name": "chartState",
+          "type": "ChartStateEnum"
+        },
+        {
+          "data": [],
+          "name": "keyParamName",
+          "type": "String"
+        },
+        {
+          "data": [],
+          "name": "keyParamValue",
+          "type": "Object"
+        }
+      ]
+    }
+  },
+  "params": {},
+  "propConfig": {
+    "custom.sfc_run": {
+      "binding": {
+        "config": {
+          "expression": "runScript(\u0027DBLogger.get_charts_running\u0027,1000,\u0027INFEED_TC_MOVE\u0027)"
+        },
+        "type": "expr"
+      },
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 32,
+          "width": 371,
+          "x": 243,
+          "y": 206
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.sfc_run"
+              },
+              "transforms": [
+                {
+                  "code": "\tid\u003dvalue.getValueAt(0,0)\n\tchartVars \u003d system.sfc.getVariables(id)[\"sourcepath\"]\n\treturn chartVars",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 371,
+          "x": 243,
+          "y": 259
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.custom.sfc_run"
+              },
+              "transforms": [
+                {
+                  "code": "\tid\u003dvalue.getValueAt(0,0)\n\tchartVars \u003d system.sfc.getVariables(id)[\"destinationpath\"]\n\treturn chartVars",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

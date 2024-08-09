@@ -8,14 +8,14 @@ def move_to_source_car(path,cart):
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/InSourcePos_PLCTOSM',1)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/SourceRollRun_PLCTOSM',1)
 	system.tag.write(path+'/TransComm/SourceRollRun_PLCTOSM',1)
+
+def leaving_source(path,cart):
 	time.sleep(10)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/InSourcePos_PLCTOSM',0)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/SourceRollRun_PLCTOSM',0)
 	system.tag.write(path+'/TransComm/SourceRollRun_PLCTOSM',0)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/LocOccupied_PLCTOSM',1)
 	system.tag.write(path+'/LocOccupied_PLCTOSM',0)
-	
-
 	
 def move_to_dest_car(path,cart):
 	sourcePos=system.tag.read(path+'/Coordinate/X_Location').value
@@ -25,6 +25,8 @@ def move_to_dest_car(path,cart):
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/InDestPos_PLCTOSM',1)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/DestRollRun_PLCTOSM',1)
 	system.tag.write(path+'/TransComm/DestRollRun_PLCTOSM',1)
+
+def leaving_dest(path,cart):
 	time.sleep(10)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/InDestPos_PLCTOSM',0)
 	system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/DestRollRun_PLCTOSM',0)
@@ -36,6 +38,3 @@ def park_location_simul(cart):
 	actual_loc=system.tag.read('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/ParkLocation_SMTOPLC').value
 	if actual_loc != 0:
 		system.tag.write('[default]'+cart+'_TransferCart/TC_AGTC/TransComm/ActualPosition_PLCTOSM', actual_loc)
-	
-	
-	

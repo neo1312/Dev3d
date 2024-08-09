@@ -1,7 +1,7 @@
 import java.lang.Exception
 import json
 
-# SFC Monitor utilities #
+#SFC Monitor utilities #
 
 LOGGER_NAME = 'SFCMonitor'
 DB_TABLE_NAME = 'SFC_EVENTS'
