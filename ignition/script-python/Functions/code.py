@@ -512,20 +512,6 @@ def is_IF_move_interfering(OF_source, OF_dest, IF_loc):
 	if IF_loc > OF_source or IF_loc > OF_dest:
 		return True
 	return False
-	
-def wait_until_condition(condition_func, interval=1):
-	while not condition_func():
-		time.sleep(interval)
-		
-def sources_interfere(IF_source, OF_source):
-	if IF_source < OF_source:
-		return False
-	return True
-	
-def destinations_interfere(IF_dest, OF_dest):
-	if IF_dest < OF_dest:
-		return False
-	return True
 
 #*****FINISH******Interference functions
 	
